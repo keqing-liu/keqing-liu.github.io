@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eaf4ff;
+      color: #1f2937;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      background-color: #4f81c7;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .navbar a:hover {
+      opacity: 0.8;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      background-color: white;
+      border-radius: 16px;
+      padding: 50px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #4f81c7;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 38px;
+      color: #2b4c7e;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .cv-link {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #4f81c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: background-color 0.2s ease;
+    }
+
+    .cv-link:hover {
+      background-color: #3a67a5;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 40px 20px;
+        padding: 30px;
+      }
+
+      .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Main Page</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="policy.html">Policy Report</a>
+  </div>
+
+  <!-- Main Page Content -->
+  <div class="container">
+
+    <!-- Replace with your image file -->
+    <img src="images/profile_25.jpeg" alt="Profile Photo" class="profile-image">
+
+    <h1>Welcome to My Homepage</h1>
+
+    <p>
+      Hello! Welcome to my personal academic website.
+      Here you can find information about my research,
+      teaching, and policy work.
+    </p>
+
+    <!-- Replace cv.pdf with your own file name -->
+    <a href="files/cv.pdf" class="cv-link" target="_blank">
+      View My CV
+    </a>
+
+  </div>
+
+</body>
+</html>
