@@ -21,6 +21,7 @@ body {
       justify-content: flex-end;
       gap: 40px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
     }
 
     .navbar a {
@@ -125,6 +126,33 @@ body {
         font-size: 18px;
       }
     }
+
+    @media (max-width: 768px) {
+
+  .main-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .text-section {
+    width: 100%;
+  }
+
+  .profile-image {
+    max-width: 280px;
+    width: 80%;
+  }
+
+  .text-section {
+    text-align: left;
+  }
+
+}
   </style>
 </head>
 
