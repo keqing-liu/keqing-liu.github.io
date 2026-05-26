@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>More About Me - Keqing Liu</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      background-color: #eaf4ff;
+      color: #1f2937;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      background-color: #4f81c7;
+      padding: 14px 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .navbar a.active {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .navbar a:hover {
+      opacity: 0.8;
+    }
+
+    /* Main Content */
+
+    .content {
+      max-width: 1000px;
+      margin: 70px auto;
+      padding: 0 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #2b4c7e;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      color: #2b4c7e;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .hiking-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 42px;
+    }
+
+    .hiking-text {
+      flex: 1;
+    }
+
+    .hiking-image {
+      width: 36%;
+      max-width: 340px;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        margin: 40px auto;
+        padding: 0 24px;
+      }
+
+      .navbar {
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .hiking-section {
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .hiking-image {
+        width: 100%;
+        max-width: 420px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <div class="navbar">
+    <a href="index.html">Main Page</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="policy.html">Policy Report</a>
+    <a href="aboutme.html" class="active">More About Me</a>
+  </div>
+
+  <!-- Main Content -->
+
+  <div class="content">
+
+    <h1>More About Me</h1>
+
+    <div class="hiking-section">
+      <div class="hiking-text">
+        <h2>Hiking</h2>
+
+        <p>
+          Outside research and teaching, I enjoy hiking. I especially like multi-day mountain treks, where the pace is slow enough to notice changing weather, forests, ridgelines, and the quiet rhythm of walking for several days.
+        </p>
+
+        <p>
+          I also enjoy local hikes and mountain trails. Some of my favorite places include Grouse Grind and Joffre Lakes Park, both of which offer very different but memorable hiking experiences: one is a steep and energetic climb, and the other is a beautiful alpine route with lakes, glaciers, and mountain views.
+        </p>
+      </div>
+
+      <img src="images/hiking.jpeg" alt="Hiking in the mountains" class="hiking-image">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
